@@ -1,0 +1,40 @@
+From be98ffc6d21b866b2f2f912de6eabab63d0f6a2b Mon Sep 17 00:00:00 2001
+From: Patryk Biel <patryk.biel.external@trumpf.com>
+Date: Wed, 30 Oct 2024 21:40:33 +0100
+Subject: [PATCH] WIP
+
+---
+ arch/arm/boot/dts/overlays/Makefile                |  1 +
+ arch/arm/boot/dts/overlays/i2c-adxl345-overlay.dts | 10 ++++++++++
+ 2 files changed, 11 insertions(+)
+ create mode 100644 arch/arm/boot/dts/overlays/i2c-adxl345-overlay.dts
+
+diff --git a/arch/arm/boot/dts/overlays/Makefile b/arch/arm/boot/dts/overlays/Makefile
+index bdd02b8c6f0f..baed840335a1 100644
+--- a/arch/arm/boot/dts/overlays/Makefile
++++ b/arch/arm/boot/dts/overlays/Makefile
+@@ -104,6 +104,7 @@ dtbo-$(CONFIG_ARCH_BCM2835) += \
+ 	hy28b.dtbo \
+ 	hy28b-2017.dtbo \
+ 	i-sabre-q2m.dtbo \
++	i2c-adxl345.dtbo \
+ 	i2c-bcm2708.dtbo \
+ 	i2c-fan.dtbo \
+ 	i2c-gpio.dtbo \
+diff --git a/arch/arm/boot/dts/overlays/i2c-adxl345-overlay.dts b/arch/arm/boot/dts/overlays/i2c-adxl345-overlay.dts
+new file mode 100644
+index 000000000000..61982f0600ba
+--- /dev/null
++++ b/arch/arm/boot/dts/overlays/i2c-adxl345-overlay.dts
+@@ -0,0 +1,10 @@
++/dts-v1/;
++/plugin/;
++
++
++&i2c1 {
++	adxl345: adxl345@1d {
++		compatible = "adi,adxl345";
++		reg = <0x1d>;
++	};  
++};
+\ No newline at end of file

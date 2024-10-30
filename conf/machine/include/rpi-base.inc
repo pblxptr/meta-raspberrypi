@@ -40,6 +40,7 @@ RPI_KERNEL_DEVICETREE_OVERLAYS ?= " \
     overlays/justboom-both.dtbo \
     overlays/justboom-dac.dtbo \
     overlays/justboom-digi.dtbo \
+    overlays/i2c-adxl345.dtbo \
     overlays/i2c-gpio.dtbo \
     overlays/i2c-rtc.dtbo \
     overlays/imx219.dtbo \

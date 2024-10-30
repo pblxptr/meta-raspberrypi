@@ -1,0 +1,52 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_EXCMD	mixed	/number, pattern, mixed, or combineV2/
+!_TAG_OUTPUT_FILESEP	slash	/slash or backslash/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PATTERN_LENGTH_LIMIT	96	/0 for no limit/
+!_TAG_PROC_CWD	/home/bielpa/playground/raspberrypi-yocto/meta-raspberrypi/	//
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	5.9.0	//
+ALLSPHINXOPTS	docs/Makefile	/^ALLSPHINXOPTS   = -d $(BUILDDIR)\/doctrees $(PAPEROPT_$(PAPER)) $(SPHINXOPTS) .$/;"	m
+BUILDDIR	docs/Makefile	/^BUILDDIR      = _build$/;"	m
+I18NSPHINXOPTS	docs/Makefile	/^I18NSPHINXOPTS  = $(PAPEROPT_$(PAPER)) $(SPHINXOPTS) .$/;"	m
+PAPER	docs/Makefile	/^PAPER         =$/;"	m
+PAPEROPT_a4	docs/Makefile	/^PAPEROPT_a4     = -D latex_paper_size=a4$/;"	m
+PAPEROPT_letter	docs/Makefile	/^PAPEROPT_letter = -D latex_paper_size=letter$/;"	m
+POKY_IMG_BYTES_PER_PIXEL	recipes-core/psplash/files/psplash-raspberrypi-img.h	/^#define POKY_IMG_BYTES_PER_PIXEL /;"	d
+POKY_IMG_HEIGHT	recipes-core/psplash/files/psplash-raspberrypi-img.h	/^#define POKY_IMG_HEIGHT /;"	d
+POKY_IMG_RLE_PIXEL_DATA	recipes-core/psplash/files/psplash-raspberrypi-img.h	/^#define POKY_IMG_RLE_PIXEL_DATA /;"	d
+POKY_IMG_ROWSTRIDE	recipes-core/psplash/files/psplash-raspberrypi-img.h	/^#define POKY_IMG_ROWSTRIDE /;"	d
+POKY_IMG_WIDTH	recipes-core/psplash/files/psplash-raspberrypi-img.h	/^#define POKY_IMG_WIDTH /;"	d
+SPHINXBUILD	docs/Makefile	/^SPHINXBUILD   = sphinx-build$/;"	m
+SPHINXOPTS	docs/Makefile	/^SPHINXOPTS    =$/;"	m
+applehelp	docs/Makefile	/^applehelp:$/;"	t
+changes	docs/Makefile	/^changes:$/;"	t
+clean	docs/Makefile	/^clean:$/;"	t
+coverage	docs/Makefile	/^coverage:$/;"	t
+devhelp	docs/Makefile	/^devhelp:$/;"	t
+dirhtml	docs/Makefile	/^dirhtml:$/;"	t
+doctest	docs/Makefile	/^doctest:$/;"	t
+dummy	docs/Makefile	/^dummy:$/;"	t
+epub	docs/Makefile	/^epub:$/;"	t
+epub3	docs/Makefile	/^epub3:$/;"	t
+gettext	docs/Makefile	/^gettext:$/;"	t
+help	docs/Makefile	/^help:$/;"	t
+html	docs/Makefile	/^html:$/;"	t
+htmlhelp	docs/Makefile	/^htmlhelp:$/;"	t
+info	docs/Makefile	/^info:$/;"	t
+json	docs/Makefile	/^json:$/;"	t
+latex	docs/Makefile	/^latex:$/;"	t
+latexpdf	docs/Makefile	/^latexpdf:$/;"	t
+latexpdfja	docs/Makefile	/^latexpdfja:$/;"	t
+linkcheck	docs/Makefile	/^linkcheck:$/;"	t
+man	docs/Makefile	/^man:$/;"	t
+pickle	docs/Makefile	/^pickle:$/;"	t
+pseudoxml	docs/Makefile	/^pseudoxml:$/;"	t
+qthelp	docs/Makefile	/^qthelp:$/;"	t
+singlehtml	docs/Makefile	/^singlehtml:$/;"	t
+texinfo	docs/Makefile	/^texinfo:$/;"	t
+text	docs/Makefile	/^text:$/;"	t
+xml	docs/Makefile	/^xml:$/;"	t

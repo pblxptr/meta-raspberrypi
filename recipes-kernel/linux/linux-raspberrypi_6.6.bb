@@ -7,12 +7,23 @@ SRCREV_meta = "6a24861d6504575a4a9f92366285332d47c7e111"
 
 KMETA = "kernel-meta"
 
-SRC_URI = " \
-    git://github.com/raspberrypi/linux.git;name=machine;branch=${LINUX_RPI_BRANCH};protocol=https \
-    git://git.yoctoproject.org/yocto-kernel-cache;type=kmeta;name=meta;branch=${LINUX_RPI_KMETA_BRANCH};destsuffix=${KMETA} \
-    file://powersave.cfg \
-    file://android-drivers.cfg \
-    "
+SRC_URI = "git://github.com/raspberrypi/linux.git;name=machine;branch=${LINUX_RPI_BRANCH};protocol=https \
+           git://git.yoctoproject.org/yocto-kernel-cache;type=kmeta;name=meta;branch=${LINUX_RPI_KMETA_BRANCH};destsuffix=${KMETA} \
+           file://powersave.cfg \
+           file://android-drivers.cfg \
+           ${@bb.utils.contains("INITRAMFS_IMAGE_BUNDLE", "1", "file://initramfs-image-bundle.cfg", "", d)} \
+           ${@bb.utils.contains("MACHINE_FEATURES", "vc4graphics", "file://vc4graphics.cfg", "", d)} \
+           ${@bb.utils.contains("MACHINE_FEATURES", "wm8960", "file://wm8960.cfg", "", d)} \
+           file://default-cpu-governor.cfg \
+           file://rpi4-nvmem.cfg \
+           ${@bb.utils.contains("INITRAMFS_IMAGE_BUNDLE", "1", "file://initramfs-image-bundle.cfg", "", d)} \
+           ${@bb.utils.contains("MACHINE_FEATURES", "vc4graphics", "file://vc4graphics.cfg", "", d)} \
+           ${@bb.utils.contains("MACHINE_FEATURES", "wm8960", "file://wm8960.cfg", "", d)} \
+           file://default-cpu-governor.cfg \
+           file://rpi4-nvmem.cfg \
+           file://devtool-fragment.cfg \
+           file://0001-WIP.patch \
+           "
 
 require linux-raspberrypi.inc
 
